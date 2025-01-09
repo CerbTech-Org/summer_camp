@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="index.css">
+        <title>Ilé-Programmes</title>
+    </head>
+    <body class="text-base">
+        <header class="bg-[#CC7722] text-white shadow-lg w-full z-50">
+            <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+
+                <a href="Accueil.html" class="flex items-center px-4 py-2">
+                    <img src="./assets/Group 3.png" alt="Ilé Summer Camp" class="w-20 h-20">
+                </a>
+
+              <button id="menu-toggle" class="lg:hidden flex flex-col justify-center items-center space-y-2 focus:outline-none">
+                <div class="w-8 h-1 bg-white transition-transform duration-300 origin-center"></div>
+                <div class="w-8 h-1 bg-white transition-transform duration-300"></div>
+                <div class="w-8 h-1 bg-white transition-transform duration-300 origin-center"></div>
+              </button>
+
+              <nav id="desktop-menu" class="hidden lg:flex flex-grow justify-end space-x-8">
+                <a href="Accueil.html" class="text-lg hover:text-black transition-colors duration-300 px-4 py-2">Accueil</a>
+                <a href="about-us.html" class="text-lg hover:text-black transition-colors duration-300 px-4 py-2">Qui Sommes-Nous ?</a>
+                <a href="formation.html" class="text-lg text-black transition-colors duration-300 px-4 py-2">Nos Programmes</a>
+                <a href="contact.html" class="text-lg hover:text-black transition-colors duration-300 px-4 py-2">Contactez-Nous</a>
+                <a href="./donation.html" class="bg-white text-black text-lg px-4 py-2 rounded-lg hover:bg-[#CC7722] hover:text-white transition duration-300">Faire Un Don</a>
+              </nav>
+            </div>
+
+            <nav id="mobile-menu" class="fixed inset-0 bg-[#CC7722] text-white transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col justify-center items-center space-y-6 text-center">
+              <a href="Accueil.html" class="text-2xl hover:text-black transition-colors duration-300">Accueil</a>
+              <a href="about-us.html" class="text-2xl hover:text-black transition-colors duration-300">Qui Sommes-Nous ?</a>
+              <a href="formation.html" class="text-2xl text-black transition-colors duration-300">Nos Programmes</a>
+              <a href="contact.html" class="text-2xl hover:text-black transition-colors duration-300">Contactez-Nous</a>
+              <a href="./donation.html" class="bg-white text-black text-2xl px-6 py-3 rounded-lg hover:bg-[#CC7722] hover:text-white transition duration-300">Faire Un Don</a>
+            </nav>
+        </header>
+        <main class="bg-[#F2F2F2]">
+            <section class="relative py-24 sm:py-32 bg-no-repeat bg-cover bg-center" style="background-image: url('./assets/DSC_1357.JPG');">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+                <div class="relative container mx-auto px-4 text-center">
+                    <h1 class="text-4xl sm:text-6xl text-white font-bold mb-6 leading-tight animate-fadeInUp">Nos Programmes</h1>
+                    <p class="text-white text-xl sm:text-2xl mb-10 max-w-2xl mx-auto animate-fadeInUp delay-200">Découvrez notre gamme de formations conçues pour vous propulser dans le monde du numérique.</p>
+                </div>
+            </section>
+            <section class="py-20 bg-white">
+                <div class="text-center">
+                    <div class="text-3xl text-[#CC7722]">
+                        <h1>En maintenace</h1>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-[#CC7722] py-16 px-4 text-white">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                    <div class="animate-slideInRight delay-200">
+                        <h3 class="text-2xl font-bold mb-6 border-b-2 border-yellow-500 pb-2">Nos programmes</h3>
+                        <ul class="space-y-3">
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="posture.html" class="hover:text-[#FEFA11]">Posture Professionnelle</a></li>
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="aisance.html" class="hover:text-[#FEFA11]">Aisance Orale</a></li>
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="dev.html" class="hover:text-[#FEFA11]">Développement web et mobile</a></li>
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="design.html" class="hover:text-[#FEFA11]">Design Numérique</a></li>
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="graphics.html" class="hover:text-[#FEFA11]">Web et Graphique</a></li>
+                        </ul>
+                    </div>
+                    <div class="animate-slideInRight delay-200">
+                        <h3 class="text-2xl font-bold mb-6 border-b-2 border-yellow-500 pb-2">Liens Rapides</h3>
+                        <ul class="space-y-3">
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="Accueil.html" class="hover:text-[#FEFA11]">Accueil</a></li>
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="about-us.html" class="hover:text-[#FEFA11]">Qui Sommes-Nous?</a></li>
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="formation.html" class="hover:text-[#FEFA11]">Nos Programmes</a></li>
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="contact.html" class="hover:text-[#FEFA11]">Contactez-Nous</a></li>
+                        </ul>
+                    </div>
+                    <div class="animate-slideInRight delay-200">
+                        <h3 class="text-2xl font-bold mb-6 border-b-2 border-yellow-500 pb-2">Social</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center transition-all duration-300 hover:translate-x-2">
+                                <i class='bx bxl-facebook text-2xl mr-3'></i>
+                                <a href="https://www.facebook.com/profile.php?id=61550480079542" class="hover:text-[#FEFA11]">Facebook</a>
+                            </li>
+                            <li class="flex items-center transition-all duration-300 hover:translate-x-2">
+                                <i class='bx bxl-instagram text-2xl mr-3'></i>
+                                <a href="https://www.instagram.com/ilesummercamp.bj?igsh=b2c4dHZsMDY4M3Uz&utm_source=qr" class="hover:text-[#FEFA11]">Instagram</a>
+                            </li>
+                            <li class="flex items-center transition-all duration-300 hover:translate-x-2">
+                                <i class='bx bxl-linkedin text-2xl mr-3'></i>
+                                <a href="https://www.linkedin.com/in/il%C3%A9-summer-camp-00a429289/" class="hover:text-[#FEFA11]">Linkedin</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="animate-slideInRight delay-200">
+                        <h3 class="text-2xl font-bold mb-6 border-b-2 border-yellow-500 pb-2">Nos Informations</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class='bx bx-phone text-2xl mr-3'></i>
+                                <a href="tel: +229 40572434" class="hover:text-[#FEFA11]">+229 40572434</a>
+                            </li>
+                            <li class="flex items-center">
+                                <i class='bx bx-envelope text-2xl mr-3'></i>
+                                <a href="mailto: contactileasso@gmail.com" class="hover:text-[#FEFA11]">contactileasso@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-t border-yellow-500 pt-8 text-center">
+                    <div class="mb-4 sm:mb-0 text-sm">&copy; 2024 Ilé. Tous droits réservés.</div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const menuToggle = document.getElementById('menu-toggle');
+                const mobileMenu = document.getElementById('mobile-menu');
+                const menuLinks = mobileMenu.querySelectorAll('a');
+                const lines = menuToggle.querySelectorAll('div');
+                const body = document.body;
+
+                function toggleMenu() {
+                mobileMenu.classList.toggle('translate-x-0');
+                mobileMenu.classList.toggle('translate-x-full');
+                lines[0].classList.toggle('rotate-45');
+                lines[1].classList.toggle('opacity-0');
+                lines[2].classList.toggle('-rotate-45');
+                }
+
+                menuToggle.addEventListener('click', toggleMenu);
+
+                menuLinks.forEach(link => {
+                link.addEventListener('click', toggleMenu);
+                });
+
+                body.addEventListener('click', (e) => {
+                if (!mobileMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+                    if (!mobileMenu.classList.contains('translate-x-full')) {
+                    toggleMenu();
+                    }
+                }
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="index.css">
+        <title>Ilé - Accueil</title>
+    </head>
+    <body class="text-base">
+        <header class="bg-[#CC7722] text-white shadow-lg  w-full z-50">
+            <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+
+              <a href="Accueil.html" class="flex items-start px-4 py-2">
+                <img src="./assets/Group 3.png" alt="Ilé Summer Camp" class="w-20 h-20">
+              </a>
+
+              <button id="menu-toggle" class="lg:hidden flex flex-col justify-center items-center space-y-2 focus:outline-none">
+                <div class="w-8 h-1 bg-white transition-transform duration-300 origin-center"></div>
+                <div class="w-8 h-1 bg-white transition-transform duration-300"></div>
+                <div class="w-8 h-1 bg-white transition-transform duration-300 origin-center"></div>
+              </button>
+
+              <nav id="desktop-menu" class="hidden lg:flex flex-grow justify-end space-x-8">
+                <a href="Accueil.html" class="text-lg text-black transition-colors duration-300 px-4 py-2">Accueil</a>
+                <a href="about-us.html" class="text-lg hover:text-black transition-colors duration-300 px-4 py-2">Qui Sommes-Nous ?</a>
+                <a href="formation.html" class="text-lg hover:text-black transition-colors duration-300 px-4 py-2">Nos Programmes</a>
+                <a href="contact.html" class="text-lg hover:text-black transition-colors duration-300 px-4 py-2">Contactez-Nous</a>
+                <a href="donation.html" class="bg-white text-black text-lg px-4 py-2 rounded-lg hover:bg-[#CC7722] hover:text-white transition duration-300">Faire Un Don</a>
+              </nav>
+            </div>
+
+            <nav id="mobile-menu" class="fixed inset-0 bg-[#CC7722] text-white transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col justify-center items-center space-y-6 text-center">
+              <a href="Accueil.html" class="text-2xl text-black transition-colors duration-300">Accueil</a>
+              <a href="about-us.html" class="text-2xl hover:text-black transition-colors duration-300">Qui Sommes-Nous ?</a>
+              <a href="formation.html" class="text-2xl hover:text-black transition-colors duration-300">Nos Programmes</a>
+              <a href="contact.html" class="text-2xl hover:text-black transition-colors duration-300">Contactez-Nous</a>
+              <a href="donation.html" class="bg-white text-black text-2xl px-6 py-3 rounded-lg hover:bg-[#CC7722] hover:text-white transition duration-300">Faire Un Don</a>
+            </nav>
+        </header>
+        <main class="bg-[#F2F2F2]">
+            <section class="relative py-20 sm:py-32 bg-no-repeat bg-cover bg-center" style="background-image: url('./assets/DSC_1377.JPG');">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+                <div class="relative container mx-auto px-4 text-center">
+                    <h1 class="text-4xl sm:text-6xl text-white font-bold mb-6 leading-tight slide-in-left">
+                        DÉCOUVREZ LES MÉTIERS DU NUMÉRIQUE
+                    </h1>
+                    <p class="text-white text-xl sm:text-2xl mb-10 max-w-2xl mx-auto slide-in-right">
+                        Ilé est une association visant à favoriser l'intégration et 
+                        l'insertion des jeunes du plateau dans le monde du numérique
+                        pour un impact durable.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-5 justify-center">
+                        <a href="./formation.html" class="bg-[#CC7722] text-white rounded-full py-3 px-8 text-lg font-semibold hover:bg-white hover:text-black transition duration-300" aria-label="Nos formations">
+                            Nos programmes
+                        </a>
+                        <a href="#" class="bg-white text-black rounded-full py-3 px-8 text-lg font-semibold hover:bg-[#CC7722] hover:text-white transition duration-300" aria-label="En savoir plus">
+                            En savoir plus
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="py-16 bg-gray-100 px-4 md:px-20">
+                <div class="container mx-auto px-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center transform transition duration-500 hover:scale-105" data-aos="fade-up" data-aos-delay="100">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-[#CC7722] mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                            <h3 class="text-xl font-semibold mt-4 mb-2">Être Parrain</h3>
+                            <p class="text-gray-600 mb-4">Parrainez l'association pour favoriser un plus grand impact en milieu moderne.</p>
+                            <div class="button-group">
+                                <a href="./partenenaire.html" class="btn">NOUS REJOINDRE</a>
+                            </div>
+                        </div>
+            
+                        <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center transform transition duration-500 hover:scale-105" data-aos="fade-up" data-aos-delay="100">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-[#CC7722]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                            <h3 class="text-xl font-semibold mt-4 mb-2">Être partenaire</h3>
+                            <p class="text-gray-600 mb-4">Devenez partenaire de nos différents programmes afin de mieux former les jeunes du plateau.</p>
+                            <div class="button-group">
+                                <a href="./partenenaire.html" class="btn">NOUS CONTACTER</a>
+                            </div>
+                        </div>
+            
+                        <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center transform transition duration-500 hover:scale-105" data-aos="fade-up" data-aos-delay="100">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-[#CC7722]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11" />
+                            </svg>
+                            <h3 class="text-xl font-semibold mt-4 mb-2">Être Bénévole</h3>
+                            <p class="text-gray-600 mb-4">Devenez bénévole afin de nous accompagner sur nos différents programmes et dans nos différentes actions avec une équipe de jeunes personnes dynamique et engagé.</p>
+                            <div class="button-group">
+                                <a href="./benevole.html" class="btn">NOUS CONTACTER</a>
+                            </div>
+                        </div>
+            
+                        <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center transform transition duration-500 hover:scale-105" data-aos="fade-up" data-aos-delay="100">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-[#CC7722]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <h3 class="text-xl font-semibold mt-4 mb-2">Faire un don</h3>
+                            <p class="text-gray-600 mb-4">Vous pouvez faire un don matériel de manière anonyme ou non afin de soutenir nos divers programmes et ou actions au profit de jeunes et enfants du plateau.</p>
+                            <div class="button-group">
+                                <a href="./donation.html" class="btn">NOUS SOUTENIR</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-24 px-4 sm:px-8 lg:px-16">
+                <div class="container mx-auto">
+                    <div class="flex flex-col lg:flex-row items-center lg:items-start gap-12">
+                        <div class="lg:w-1/2" data-aos="fade-right">
+                            <h2 class="text-[#CC7722] font-bold text-3xl sm:text-5xl mb-6">Notre objectif</h2>
+                            <p class="text-gray-700 text-lg mb-8 max-w-xl">
+                                Favoriser l'intégration des jeunes du Plateau dans le numérique, stimuler l'entrepreneuriat et l'innovation en tenant compte de leur contexte et de leur passion, grâce à un écosystème propice à leur croissance.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="formation.html" class="bg-[#CC7722] text-white rounded-full py-3 px-8 text-lg font-semibold hover:bg-white hover:text-black transition duration-300 transform hover:scale-105">Nos formations</a>
+                                <a href="#" class="bg-white text-black rounded-full py-3 px-8 text-lg font-semibold hover:bg-[#CC7722] hover:text-white transition duration-300 transform hover:scale-105" aria-label="En savoir plus">En savoir plus</a>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2" data-aos="fade-left">
+                            <img src="./assets/DSC_1270.JPG" alt="Ilé en action" class="w-full rounded-lg shadow-xl transform transition duration-500 hover:scale-105">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-20 bg-white">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-center text-4xl sm:text-5xl mb-12 text-[#CC7722]">Nos programmes</h2>
+                    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                        <div class="program-card transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+                            <img src="./assets/Média.jpg" alt="Formation" class="w-full h-48 object-cover rounded-t-xl">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2 text-[#CC7722]">Formation en posture professionnelle</h3>
+                                <p class="text-gray-600 mb-4">Petite description de la formation...</p>
+                                <a href="./posture.html" class="btns">En savoir plus</a>
+                            </div>
+                        </div>
+                        <div class="program-card transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+                            <img src="./assets/Média.jpg" alt="Formation" class="w-full h-48 object-cover rounded-t-xl">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2 text-[#CC7722]">Formation en aisance orale</h3>
+                                <p class="text-gray-600 mb-4">Petite description de la formation...</p>
+                                <a href="./posture.html" class="btns">En savoir plus</a>
+                            </div>
+                        </div>
+                        <div class="program-card transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+                            <img src="./assets/Média.jpg" alt="Formation" class="w-full h-48 object-cover rounded-t-xl">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2 text-[#CC7722]">Formation en développement web et mobile</h3>
+                                <p class="text-gray-600 mb-4">Petite description de la formation...</p>
+                                <a href="./posture.html" class="btns">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="py-24 bg-[#F2F2F2]">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-center text-4xl sm:text-5xl mb-12 text-[#CC7722] font-bold">Témoignages</h2>
+                    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <p class="text-gray-600 mb-6">"Ilé m'a offert une opportunité incroyable d'apprendre et de grandir dans le domaine du numérique. Je suis reconnaissante pour cette expérience enrichissante."</p>
+                            <div class="flex items-center">
+                                <img src="./assets/Média.jpg" alt="" class="h-12 w-12 rounded-full mr-4">
+                                <div>
+                                    <p class="font-semibold text-[#CC7722]">Romziath AMOUSSA</p>
+                                    <p class="text-gray-500 text-sm">Collègienne</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <p class="text-gray-600 mb-6">"Le Ilé Summer Camp m'a permis de développer des compétences techniques et humaines, comme la communication et le travail en équipe."</p>
+                            <div class="flex items-center">
+                                <img src="./assets/Média.jpg" alt="" class="h-12 w-12 rounded-full mr-4">
+                                <div>
+                                    <p class="font-semibold text-[#CC7722]">DAGBA Eniola Samuel</p>
+                                    <p class="text-gray-500 text-sm">Etudiant</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <p class="text-gray-600 mb-6">"Grâce à Ilé, j'ai acquis des compétences techniques et un réseau inspirant. Je me sens capable d'innover et de contribuer à mon environnement."</p>
+                            <div class="flex items-center">
+                                <img src="./assets/Média.jpg" alt="" class="h-12 w-12 rounded-full mr-4">
+                                <div>
+                                    <p class="font-semibold text-[#CC7722]">ABIOLA Achabi Issiaka</p>
+                                    <p class="text-gray-500 text-sm">Collégien</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </section>
+            <section class="py-24 bg-white">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-center text-4xl sm:text-5xl mb-12 text-[#CC7722] font-bold">Nos partenaires</h2>
+                    <div class="flex flex-wrap justify-center items-center gap-8">
+                        <div class="w-32 h-32 bg-gray-100 rounded-lg flex items-center justify-center p-4 transition-transform duration-300 hover:scale-110">
+                            <img src="./assets/Logo partenaires Ilé/IMG-20240723-WA0101-removebg-preview.png" alt="Partenaire" class="max-w-full max-h-full object-contain">
+                        </div>
+                        <div class="w-32 h-32 bg-gray-100 rounded-lg flex items-center justify-center p-4 transition-transform duration-300 hover:scale-110">
+                            <img src="./assets/Logo partenaires Ilé/².jpg" alt="Partenaire" class="max-w-full max-h-full object-contain">
+                        </div>
+                        <div class="w-32 h-32 bg-gray-100 rounded-lg flex items-center justify-center p-4 transition-transform duration-300 hover:scale-110">
+                            <img src="./assets/Logo_Excellence-removebg-preview.png" alt="Partenaire" class="max-w-full max-h-full object-contain">
+                        </div>
+                        <div class="w-32 h-32 bg-gray-100 rounded-lg flex items-center justify-center p-4 transition-transform duration-300 hover:scale-110">
+                            <img src="./assets/Logo partenaires Ilé/thumbnail_image001.jpg" alt="Partenaire" class="max-w-full max-h-full object-contain">
+                        </div>
+                        <div class="w-32 h-32 bg-gray-100 rounded-lg flex items-center justify-center p-4 transition-transform duration-300 hover:scale-110">
+                            <img src="./assets/Logo partenaires Ilé/welag complet blanc.png" alt="Partenaire" class="max-w-full max-h-full object-contain bg-black">
+                        </div>
+                        <div class="w-32 h-32 bg-gray-100 rounded-lg flex items-center justify-center p-4 transition-transform duration-300 hover:scale-110">
+                            <img src="./assets/alaketu-removebg-preview.png" alt="Partenaire" class="max-w-full max-h-full object-contain">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="bg-[#CC7722] py-16 px-4 text-white">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                    <div class="animate-slideInRight delay-200">
+                        <h3 class="text-2xl font-bold mb-6 border-b-2 border-yellow-500 pb-2">Nos programmes</h3>
+                        <ul class="space-y-3">
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="posture.html" class="hover:text-[#FEFA11]">Posture Professionnelle</a></li>
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="aisance.html" class="hover:text-[#FEFA11]">Aisance Orale</a></li>
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="dev.html" class="hover:text-[#FEFA11]">Développement web et mobile</a></li>
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="design.html" class="hover:text-[#FEFA11]">Design Numérique</a></li>
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="graphics.html" class="hover:text-[#FEFA11]">Web et Graphique</a></li>
+                        </ul>
+                    </div>
+                    <div class="animate-slideInRight delay-200">
+                        <h3 class="text-2xl font-bold mb-6 border-b-2 border-yellow-500 pb-2">Liens Rapides</h3>
+                        <ul class="space-y-3">
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="Accueil.html" class="hover:text-[#FEFA11]">Accueil</a></li>
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="about-us.html" class="hover:text-[#FEFA11]">Qui Sommes-Nous?</a></li>
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="formation.html" class="hover:text-[#FEFA11]">Nos Programmes</a></li>
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="contact.html" class="hover:text-[#FEFA11]">Contactez-Nous</a></li>
+                        </ul>
+                    </div>
+                    <div class="animate-slideInRight delay-200">
+                        <h3 class="text-2xl font-bold mb-6 border-b-2 border-yellow-500 pb-2">Social</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center transition-all duration-300 hover:translate-x-2">
+                                <i class='bx bxl-facebook text-2xl mr-3'></i>
+                                <a href="https://www.facebook.com/profile.php?id=61550480079542" class="hover:text-[#FEFA11]">Facebook</a>
+                            </li>
+                            <li class="flex items-center transition-all duration-300 hover:translate-x-2">
+                                <i class='bx bxl-instagram text-2xl mr-3'></i>
+                                <a href="https://www.instagram.com/ilesummercamp.bj?igsh=b2c4dHZsMDY4M3Uz&utm_source=qr" class="hover:text-[#FEFA11]">Instagram</a>
+                            </li>
+                            <li class="flex items-center transition-all duration-300 hover:translate-x-2">
+                                <i class='bx bxl-linkedin text-2xl mr-3'></i>
+                                <a href="https://www.linkedin.com/in/il%C3%A9-summer-camp-00a429289/" class="hover:text-[#FEFA11]">Linkedin</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="animate-slideInRight delay-200">
+                        <h3 class="text-2xl font-bold mb-6 border-b-2 border-yellow-500 pb-2">Nos Informations</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class='bx bx-phone text-2xl mr-3'></i>
+                                <a href="tel: +229 40572434" class="hover:text-[#FEFA11]">+229 40572434</a>
+                            </li>
+                            <li class="flex items-center">
+                                <i class='bx bx-envelope text-2xl mr-3'></i>
+                                <a href="mailto: contactileasso@gmail.com" class="hover:text-[#FEFA11]">contactileasso@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-t border-yellow-500 pt-8 text-center">
+                    <div class="mb-4 sm:mb-0 text-sm">&copy; 2024 Ilé. Tous droits réservés.</div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const menuToggle = document.getElementById('menu-toggle');
+                const mobileMenu = document.getElementById('mobile-menu');
+                const menuLinks = mobileMenu.querySelectorAll('a');
+                const lines = menuToggle.querySelectorAll('div');
+                const body = document.body;
+
+                function toggleMenu() {
+                    mobileMenu.classList.toggle('translate-x-0');
+                    mobileMenu.classList.toggle('translate-x-full');
+                    lines[0].classList.toggle('rotate-45');
+                    lines[1].classList.toggle('opacity-0');
+                    lines[2].classList.toggle('-rotate-45');
+                }
+
+                menuToggle.addEventListener('click', toggleMenu);
+
+                menuLinks.forEach(link => {
+                link.addEventListener('click', toggleMenu);
+                });
+
+                body.addEventListener('click', (e) => {
+                if (!mobileMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+                    if (!mobileMenu.classList.contains('translate-x-full')) {
+                    toggleMenu();
+                    }
+                }
+                });
+            });
+        </script>
+    </body>
+</html>

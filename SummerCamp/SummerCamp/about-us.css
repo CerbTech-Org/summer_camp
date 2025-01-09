@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+.text {
+    background-color: #fff;
+    color: #333;
+    padding: 3px;
+    overflow-y: none;
+    text-align: justify;
+    margin: 30px;
+}
+.learn {
+    padding: 100px 20px;
+    font-size: 20px;
+}
+.learn ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.learn li {
+    margin: 15px 0;
+}
+.contact {
+    text-align: center;
+    padding: 100px 20px;
+}
+.contact button {
+    padding: 10px 20px;
+    background-color: #FEFA11;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.contact button:hover {
+    background-color: #FEFA11;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.box {
+    background-color: transparent;
+    width: 50%;
+    height: 100;
+    line-height: 2.0;
+    color: #666;
+    margin: 30px 10;
+}
+footer {
+    background-color: #FEFA11;
+    color: white;
+}
+footer h1, footer h5 {
+    margin-bottom: 10px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+footer a:hover {
+    color: #ddd;
+}

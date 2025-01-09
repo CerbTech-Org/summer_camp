@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+        <link rel="stylesheet" href="style.css"></link>
+        <link rel="stylesheet" href="don.css">
+        <script src="index.var.js"></script>
+        <title>Ilé - Don technologique</title>
+    </head>
+    <body class="bg-gray-100 text-gray-800">
+        <header class="bg-[#CC7722] text-white shadow-lg w-full z-50">
+            <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+
+                <a href="Accueil.html" class="flex items-center px-4 py-2">
+                    <img src="./assets/Group 3.png" alt="Ilé Summer Camp" class="w-20 h-20">
+                </a>
+
+              <button id="menu-toggle" class="lg:hidden flex flex-col justify-center items-center space-y-2 focus:outline-none">
+                <div class="w-8 h-1 bg-white transition-transform duration-300 origin-center"></div>
+                <div class="w-8 h-1 bg-white transition-transform duration-300"></div>
+                <div class="w-8 h-1 bg-white transition-transform duration-300 origin-center"></div>
+              </button>
+
+              <nav id="desktop-menu" class="hidden lg:flex flex-grow justify-end space-x-8">
+                <a href="Accueil.html" class="text-lg hover:text-black transition-colors duration-300 px-4 py-2">Accueil</a>
+                <a href="about-us.html" class="text-lg hover:text-black transition-colors duration-300 px-4 py-2">Qui Sommes-Nous ?</a>
+                <a href="formation.html" class="text-lg hover:text-black transition-colors duration-300 px-4 py-2">Nos Programmes</a>
+                <a href="contact.html" class="text-lg hover:text-black transition-colors duration-300 px-4 py-2">Contactez-Nous</a>
+                <a href="./donation.html" class="bg-white text-black text-lg px-4 py-2 rounded-lg hover:bg-[#CC7722] hover:text-white transition duration-300">Faire Un Don</a>
+              </nav>
+            </div>
+
+            <nav id="mobile-menu" class="fixed inset-0 bg-[#CC7722] text-white transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col justify-center items-center space-y-6 text-center">
+              <a href="Accueil.html" class="text-2xl hover:text-black transition-colors duration-300">Accueil</a>
+              <a href="about-us.html" class="text-2xl hover:text-black transition-colors duration-300">Qui Sommes-Nous ?</a>
+              <a href="formation.html" class="text-2xl hover:text-black transition-colors duration-300">Nos Programmes</a>
+              <a href="contact.html" class="text-2xl hover:text-black transition-colors duration-300">Contactez-Nous</a>
+              <a href="./donation.html" class="bg-white text-black text-2xl px-6 py-3 rounded-lg hover:bg-[#CC7722] hover:text-white transition duration-300">Faire Un Don</a>
+            </nav>
+        </header>
+
+        <main class="pt-20">
+            <section class="py-20 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-4xl font-bold text-center text-[#CC7722] mb-8" data-aos="fade-up">Faites un don technologique</h1>
+                    <p class="text-xl text-center mb-12" data-aos="fade-up" data-aos-delay="100">
+                        Votre ancien matériel peut faire la différence dans la vie d'un jeune passionné par le numérique.
+                        Donnez une seconde vie à vos appareils !
+                    </p>
+
+                    <div class="bg-white rounded-lg shadow-xl p-8 mb-12" data-aos="fade-up" data-aos-delay="200">
+                        <h2 class="text-2xl font-semibold mb-6 text-[#CC7722]">Types d'objets que nous acceptons :</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="flex items-center space-x-4">
+                                <i class='bx bx-laptop text-4xl text-[#CC7722]'></i>
+                                <span>Ordinateurs portables</span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i class='bx bx-desktop text-4xl text-[#CC7722]'></i>
+                                <span>Ordinateurs de bureau</span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i class='bx bx-mobile-alt text-4xl text-[#CC7722]'></i>
+                                <span>Tablettes</span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i class='bx bxs-keyboard text-4xl text-[#CC7722]'></i>
+                                <span>Claviers</span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i class='bx bx-mouse text-4xl text-[#CC7722]'></i>
+                                <span>Souris</span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i class='bx bx-headphone text-4xl text-[#CC7722]'></i>
+                                <span>Casques et écouteurs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-xl p-8 mb-12" data-aos="fade-up" data-aos-delay="300">
+                        <h2 class="text-2xl font-semibold mb-6 text-[#CC7722]">Comment faire un don ?</h2>
+                        <ol class="list-decimal list-inside space-y-4">
+                            <li>Vérifiez que votre appareil est en état de marche</li>
+                            <li>Effacez toutes vos données personnelles</li>
+                            <li>Remplissez le formulaire ci-dessous</li>
+                            <li>Nous vous contacterons pour organiser la collecte</li>
+                        </ol>
+                    </div>
+
+                    <form id="don" class="bg-white rounded-lg shadow-xl p-8" data-aos="fade-up" data-aos-delay="400">
+                        <h2 class="text-2xl font-semibold mb-6 text-[#CC7722]">Formulaire de don</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="nom" class="block mb-2">Nom</label>
+                                <input type="text" id="nom" name="nom" class="w-full px-3 py-2 border rounded-md" required>
+                            </div>
+                            <div>
+                                <label for="prenom" class="block mb-2">Prénom</label>
+                                <input type="text" id="prenom" name="prenom" class="w-full px-3 py-2 border rounded-md" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-md" required>
+                            </div>
+                            <div>
+                                <label for="telephone" class="block mb-2">Téléphone</label>
+                                <input type="tel" id="telephone" name="telephone" class="w-full px-3 py-2 border rounded-md" required>
+                            </div>
+                            <div class="md:col-span-2">
+                                <label for="type_objet" class="block mb-2">Type d'objet</label>
+                                <select id="type_objet" name="type_objet" class="w-full px-3 py-2 border rounded-md" required>
+                                    <option value="">Sélectionnez un type d'objet</option>
+                                    <option value="ordinateur_portable">Ordinateur portable</option>
+                                    <option value="ordinateur_bureau">Ordinateur de bureau</option>
+                                    <option value="tablette">Tablette</option>
+                                    <option value="clavier">Clavier</option>
+                                    <option value="souris">Souris</option>
+                                    <option value="casque">Casque/Écouteurs</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+                            <div class="md:col-span-2">
+                                <label for="description" class="block mb-2">Description de l'objet</label>
+                                <textarea id="description" name="description" rows="4" class="w-full px-3 py-2 border rounded-md" required></textarea>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <button type="submit" class="bg-[#CC7722] text-white px-6 py-3 rounded-md hover:bg-[#A35C1B] transition-colors duration-300">
+                                Envoyer ma demande de don
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-[#CC7722] py-16 px-4 text-white">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                    <div class="animate-slideInRight delay-200">
+                        <h3 class="text-2xl font-bold mb-6 border-b-2 border-yellow-500 pb-2">Nos programmes</h3>
+                        <ul class="space-y-3">
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="posture.html" class="hover:text-[#FEFA11]">Posture Professionnelle</a></li>
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="aisance.html" class="hover:text-[#FEFA11]">Aisance Orale</a></li>
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="dev.html" class="hover:text-[#FEFA11]">Développement web et mobile</a></li>
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="design.html" class="hover:text-[#FEFA11]">Design Numérique</a></li>
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="graphics.html" class="hover:text-[#FEFA11]">Web et Graphique</a></li>
+                        </ul>
+                    </div>
+                    <div class="animate-slideInRight delay-200">
+                        <h3 class="text-2xl font-bold mb-6 border-b-2 border-yellow-500 pb-2">Liens Rapides</h3>
+                        <ul class="space-y-3">
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="Accueil.html" class="hover:text-[#FEFA11]">Accueil</a></li>
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="about-us.html" class="hover:text-[#FEFA11]">Qui Sommes-Nous?</a></li>
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="formation.html" class="hover:text-[#FEFA11]">Nos Programmes</a></li>
+                            <li class="transition-all duration-300 hover:translate-x-2"><a href="contact.html" class="hover:text-[#FEFA11]">Contactez-Nous</a></li>
+                        </ul>
+                    </div>
+                    <div class="animate-slideInRight delay-200">
+                        <h3 class="text-2xl font-bold mb-6 border-b-2 border-yellow-500 pb-2">Social</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center transition-all duration-300 hover:translate-x-2">
+                                <i class='bx bxl-facebook text-2xl mr-3'></i>
+                                <a href="https://www.facebook.com/profile.php?id=61550480079542" class="hover:text-[#FEFA11]">Facebook</a>
+                            </li>
+                            <li class="flex items-center transition-all duration-300 hover:translate-x-2">
+                                <i class='bx bxl-instagram text-2xl mr-3'></i>
+                                <a href="https://www.instagram.com/ilesummercamp.bj?igsh=b2c4dHZsMDY4M3Uz&utm_source=qr" class="hover:text-[#FEFA11]">Instagram</a>
+                            </li>
+                            <li class="flex items-center transition-all duration-300 hover:translate-x-2">
+                                <i class='bx bxl-linkedin text-2xl mr-3'></i>
+                                <a href="https://www.linkedin.com/in/il%C3%A9-summer-camp-00a429289/" class="hover:text-[#FEFA11]">Linkedin</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="animate-slideInRight delay-200">
+                        <h3 class="text-2xl font-bold mb-6 border-b-2 border-yellow-500 pb-2">Nos Informations</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class='bx bx-phone text-2xl mr-3'></i>
+                                <a href="tel: +229 40572434" class="hover:text-[#FEFA11]">+229 40572434</a>
+                            </li>
+                            <li class="flex items-center">
+                                <i class='bx bx-envelope text-2xl mr-3'></i>
+                                <a href="mailto: contactileasso@gmail.com" class="hover:text-[#FEFA11]">contactileasso@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-t border-yellow-500 pt-8 text-center">
+                    <div class="mb-4 sm:mb-0 text-sm">&copy; 2024 Ilé. Tous droits réservés.</div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./click3.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000,
+                once: true,
+            });
+
+            document.addEventListener('DOMContentLoaded', function() {
+                const menuToggle = document.getElementById('menu-toggle');
+                const mobileMenu = document.getElementById('mobile-menu');
+                const menuLinks = mobileMenu.querySelectorAll('a');
+                const lines = menuToggle.querySelectorAll('div');
+                const body = document.body;
+
+                function toggleMenu() {
+                mobileMenu.classList.toggle('translate-x-0');
+                mobileMenu.classList.toggle('translate-x-full');
+                lines[0].classList.toggle('rotate-45');
+                lines[1].classList.toggle('opacity-0');
+                lines[2].classList.toggle('-rotate-45');
+                }
+
+                menuToggle.addEventListener('click', toggleMenu);
+
+                menuLinks.forEach(link => {
+                link.addEventListener('click', toggleMenu);
+                });
+
+                body.addEventListener('click', (e) => {
+                if (!mobileMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+                    if (!mobileMenu.classList.contains('translate-x-full')) {
+                    toggleMenu();
+                    }
+                }
+                });
+            });
+        </script>
+    </body>
+</html>
